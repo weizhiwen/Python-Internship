@@ -14,5 +14,6 @@ def triangle(n):
             list[1:-1] = [(temp + list[j]) for j, temp in enumerate(list[1:])]
         printLine(list, n)
 
+
 print("杨辉三角")
 triangle(10)
