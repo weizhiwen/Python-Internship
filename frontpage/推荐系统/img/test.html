@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #parent {
+            display: flex;
+            display: -webkit-flex;
+            width: 1000px;
+            background: darkgray;
+            justify-content: space-between;
+        }
+
+        #child {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: row;
+        }
+
+        .div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .div1 {
+            background: pink;
+        }
+
+        .div2 {
+            background: chartreuse;
+        }
+
+        .div3 {
+            background: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            <div class="div div1">1</div>
+            <div class="div div2">2</div>
+        </div>
+        <div class="div div3">3</div>
+    </div>
+
+</body>
+</html>

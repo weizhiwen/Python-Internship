@@ -59,11 +59,19 @@ a:hover {
 #left-sort {
     display: flex;
     display: -webkit-flex;
-    align-content: space-between;
+    justify-content: space-between;
     width: 350px;
     height: 40px;
     border-radius: 8px;
     background: rgb(223, 223, 223);
+}
+
+#left-icon, #right-icon {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    background: rgb(223, 223, 223);
+    margin-left: 5px;
 }
 
 .more {
@@ -71,7 +79,8 @@ a:hover {
     width: 100px;
     height: 40px;
     line-height: 40px;
-    margin-left: 5px;
+    text-align: right;
+    margin-right: 5px;
 }
 
 .icon {
@@ -137,6 +146,7 @@ a:hover {
 .right-sort {
     display: flex;
     display: -webkit-flex;
+    justify-content: space-between;
     width: 850px;
     height: 40px;
     border-radius: 8px;
