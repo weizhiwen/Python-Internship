@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        /*全局样式*/
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑", Monaco, "Courier New", Courier, monospace;
+            font-size: 14px;
+        }
+
+        #main {
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        /*顶部栏样式*/
+        #banner {
+            display: inline-block;
+        }
+
+        /*列表样式*/
+        .banner-list {
+            float: left;
+            margin: 0;
+            list-style: none;
+            padding-left: 4px;
+        }
+
+        /*列表项样式*/
+        .banner-li {
+            float: left;
+            margin-left: 3px;
+            width: 95px;
+            height: 30px;
+            background: url("./img/button1.jpg") no-repeat;
+            text-align: center;
+        }
+
+        #content {
+            float: left;
+            margin-top: 10px;
+            background: white;
+        }
+
+        /*主体的左边部分样式*/
+        #left {
+            float: left;
+            width: 180px;
+            height: 500px;
+        }
+
+        #login #form-login {
+            padding-left: 10px;
+        }
+
+        #form-login input {
+            background: none;
+            border:none;
+            border-bottom: 2px solid darkgray;
+        }
+
+        .left-list {
+            padding-left: 10px;
+        }
+
+        .left-list-h3 {
+            margin-top: 10px;
+            padding-left: 10px;
+            width: 150px;
+            background: rgb(254, 210, 208);
+        }
+
+        .left-list-li::before {
+            content: url("./img/icon1.gif");
+            margin-right: 10px;
+        }
+
+        .left-list-li {
+            width: 150px;
+            padding: 2px 5px;
+            border-bottom: 1px dashed gray;
+            list-style: none;
+        }
+
+        #form-login button {
+            margin-top: 10px;
+            padding: 2px;
+            background: none;
+            boder: 1px solid black;
+        }
+
+        #form-login a {
+            margin-top: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        /*主体的右边部分样式*/
+        #right {
+            float: left;
+            width: 520px;
+            height: 200px;
+        }
+        
+        #latest {
+            float: left;
+        }
+        
+        #latest-img {
+            float: left;
+        }
+
+        .latest-img-item {
+            float: left;
+            margin: 1px;
+            padding: 0;
+        }
+
+        #recommend, #new, #tips {
+            float: left;
+            margin-top: 5px;
+        }
+
+        #recommend-img, #new-img {
+            float: left;
+        }
+
+        .recommend-img-item, .new-img-item {
+            float: left;
+            margin-top: 10px;
+            margin-left: 19px;
+        }
+
+        .recommend-img-item p {
+            text-align: center;
+        }
+        
+        #tips div{
+            float: left;
+        }
+
+        #tips div ul{
+            width: 500px;
+            list-style: none;
+            margin: 0 10px;
+        }
+
+        #tips div ul li::before {
+            margin-right: 5px;
+            content: url("./img/icon2.gif");
+        }
+
+        #tips div ul li{
+            float: left;
+            margin-top: 5px;
+            margin-left: 20px;
+            width: 220px;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>满屋花</title>
+</head>
+<body>
+<div id="main">
+    <div id="banner">
+        <img src="./img/banner.jpg">
+        <ul class="banner-list">
+            <li class="banner-li">鲜花礼品</li>
+            <li class="banner-li">绿色植物</li>
+            <li class="banner-li">自主订花</li>
+            <li class="banner-li">花之物语</li>
+            <li class="banner-li">会员中心</li>
+            <li class="banner-li">联系我们</li>
+            <li class="banner-li">会员中心</li>
+        </ul>
+    </div>
+    <div id="content">
+        <!-- left 开始 -->
+        <div id="left">
+            <div id="login">
+                <img src="./img/login.jpg" alt="用户登录">
+                <form id="form-login">
+                    <label for="username">用户：</label><input id="username" type="text" size="12"><br>
+                    <label for="password">密码：</label><input id="password" type="password" size="12">
+                    <button>登录</button>&nbsp;&nbsp;<button>注册</button><a href="#">忘记密码？</a>
+                </form>
+            </div>
+            <div id="category">
+                <img src="./img/category.jpg" alt="鲜花分类">
+                <div class="left-list">
+                    <h3 class="left-list-h3">用途</h3>
+                    <ul>
+                        <li class="left-list-li">爱情鲜花</li>
+                        <li class="left-list-li">生日送花</li>
+                        <li class="left-list-li">新年鲜花</li>
+                        <li class="left-list-li">家庭用花</li>
+                        <li class="left-list-li">亲情用花</li>
+                        <li class="left-list-li">道歉鲜花</li>
+                        <li class="left-list-li">开业花篮</li>
+                        <li class="left-list-li">会议用花</li>
+                    </ul>
+                    <h3 class="left-list-h3">花材</h3>
+                    <ul>
+                        <li class="left-list-li">玫瑰花</li>
+                        <li class="left-list-li">百合花</li>
+                        <li class="left-list-li">郁金香</li>
+                        <li class="left-list-li">太阳花</li>
+                        <li class="left-list-li">康乃馨</li>
+                        <li class="left-list-li">马蹄莲</li>
+                        <li class="left-list-li">扶朗</li>
+                        <li class="left-list-li">剑兰</li>
+                    </ul>
+                    <h3 class="left-list-h3">价格</h3>
+                    <ul>
+                        <li class="left-list-li">100~200元</li>
+                        <li class="left-list-li">200~300元</li>
+                        <li class="left-list-li">300~400元</li>
+                        <li class="left-list-li">400~500元</li>
+                        <li class="left-list-li">500~600元</li>
+                        <li class="left-list-li">600~800元</li>
+                        <li class="left-list-li">800元以上</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- left 结束 -->
+        <!-- right 开始 -->
+        <div id="right">
+            <div id="latest">
+                <img src="./img/latest.jpg" alt="本站快讯">
+                <div id="latest-img">
+                    <img class="latest-img-item" src="./img/new1.jpg">
+                    <img class="latest-img-item" src="./img/new2.jpg">
+                    <img class="latest-img-item" src="./img/new3.jpg">
+                </div>
+            </div>
+            <div id="recommend">
+                <img src="./img/recommend.jpg" alt="鲜花推荐">
+                <div id="recommend-img">
+                    <div class="recommend-img-item">
+                        <img src="./img/flower1.jpg">
+                        <p style="color: gray">幸福的味道</p>
+                        <p>￥ 288元</p>
+                    </div>
+                    <div class="recommend-img-item">
+                        <img src="./img/flower2.jpg">
+                        <p style="color: gray">阳光守护你</p>
+                        <p>￥ 300元</p>
+                    </div>
+                    <div class="recommend-img-item">
+                        <img src="./img/flower3.jpg">
+                        <p style="color: gray">温情永远</p>
+                        <p>￥ 268元</p>
+                    </div>
+                    <div class="recommend-img-item">
+                        <img src="./img/flower4.jpg">
+                        <p style="color: gray">爱无界</p>
+                        <p>￥ 318元</p>
+                    </div>
+                    <div class="recommend-img-item">
+                        <img src="./img/flower5.jpg">
+                        <p style="color: gray">亲亲宝贝</p>
+                        <p>￥ 368元</p>
+                    </div>
+                    <div class="recommend-img-item">
+                        <img src="./img/flower6.jpg">
+                        <p style="color: gray">相信是缘</p>
+                        <p>￥ 188元</p>
+                    </div>
+                    <div class="recommend-img-item">
+                        <img src="./img/flower7.jpg">
+                        <p style="color: gray">水晶童话</p>
+                        <p>￥ 198元</p>
+                    </div>
+                    <div class="recommend-img-item">
+                        <img src="./img/flower8.jpg">
+                        <p style="color: gray">天使之爱</p>
+                        <p>￥ 268元</p>
+                    </div>
+                </div>
+            </div>
+            <div id="new">
+                <img src="./img/new.jpg" alt="新品上市">
+                <div id="new-img">
+                    <div class="new-img-item">
+                        <img src="./img/flower9.jpg">
+                    </div>
+                    <div class="new-img-item">
+                        <img src="./img/flower10.jpg">
+                    </div>
+                    <div class="new-img-item">
+                        <img src="./img/flower11.jpg">
+                    </div>
+                    <div class="new-img-item">
+                        <img src="./img/flower12.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="tips">
+                <img src="./img/tips.jpg" alt="鲜花导购">
+                <div>
+                    <ul>
+                        <li>各种鲜花所代表的含义</li>
+                        <li>花的喜怒哀乐</li>
+                        <li>养花与养花之道</li>
+                        <li>每天清晨的第一缕杨过</li>
+                        <li>花香的味道</li>
+                        <li>世界各地关于送花的习俗</li>
+                        <li>种花与送花</li>
+                        <li>手捧一束鲜花的等待</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- right结束 -->
+    </div>
+</div>
+</body>
+</html>
