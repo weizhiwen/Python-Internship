@@ -1,0 +1,165 @@
+/*全局样式*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background: white;
+    font-family: "微软雅黑";
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    width: 1210px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*面包屑导航*/
+#breadcrumb {
+}
+
+#breadcrumb ul {
+    display: flex;
+    display: -webkit-flex;
+    margin: 20px 5px;
+    list-style: none;
+}
+
+#book {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+}
+
+#book-introduce {
+    margin-top: 50px;
+}
+
+#book-introduce h3 a {
+    font-size: 20px;
+}
+
+#book-introduce p, #book-introduce img {
+    margin-top: 20px;
+}
+
+#content {
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 10px;
+}
+
+#left-sort {
+    display: flex;
+    display: -webkit-flex;
+    align-content: space-between;
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgb(223, 223, 223);
+}
+
+.more {
+    background: none;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 5px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 30px;
+    background: rgb(253, 253, 253);
+}
+
+/*三角形的画法*/
+.icon-in {
+    width: 0;
+    height: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid rgb(153, 153, 153);
+}
+
+.icon-text {
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    background: none;
+}
+
+#left-book ul {
+    list-style: none;
+}
+
+#left-book ul li {
+    width: 300px;
+}
+
+#left-book ul li div {
+    width: 200px;
+    height: 230px;
+    margin-left: 49px;
+    margin-top: 10px;
+    border: 1px solid lightgrey;
+}
+
+#left-book ul li div p {
+    text-align: center;
+}
+
+#left-book ul li div p a b {
+    font-size: 14px;
+}
+
+#right {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 850px;
+}
+
+.right-sort {
+    display: flex;
+    display: -webkit-flex;
+    width: 850px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgb(223, 223, 223);
+}
+
+.right-book ul {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.right-book ul li {
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+}
+
+.right-book ul li p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
